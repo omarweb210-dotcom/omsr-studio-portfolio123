@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viola Aesthetics & Dental Clinics | Premium Care in New Cairo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a5f7a;
+            --primary-dark: #134b61;
+            --primary-light: #2a8faf;
+            --accent: #c8a97e;
+            --accent-light: #e8d5b7;
+            --text-dark: #1a1a2e;
+            --text-medium: #4a4a5a;
+            --text-light: #6b6b7b;
+            --bg-light: #fafbfc;
+            --bg-cream: #f5f0eb;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(26,95,122,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .hero-badge i {
+            color: #ffc107;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: var(--accent-light);
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(26,95,122,0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(26,95,122,0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-image-main {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: var(--radius-lg);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image-main::before {
+            content: '\f5c4';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 8rem;
+            color: rgba(255,255,255,0.1);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-card-1 {
+            top: 10%;
+            left: -30px;
+            animation-delay: 0s;
+        }
+
+        .floating-card-2 {
+            bottom: 15%;
+            right: -20px;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating-card i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            width: 40px;
+            height: 40px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-card div h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .floating-card div p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--primary);
+            padding: 3rem 0;
+            position: relative;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--primary-dark);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Services */
+        .services {
+            background: var(--bg-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--bg-cream);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .service-tag {
+            display: inline-block;
+            background: var(--bg-light);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        /* Doctors */
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .doctor-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .doctor-image {
+            height: 280px;
+            background: linear-gradient(135deg, var(--bg-cream), var(--accent-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .doctor-image i {
+            font-size: 5rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+
+        .doctor-rating {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow);
+        }
+
+        .doctor-rating i {
+            color: #ffc107;
+            font-size: 0.8rem;
+            opacity: 1;
+        }
+
+        .doctor-info {
+            padding: 1.5rem;
+        }
+
+        .doctor-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .doctor-info .specialty {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .doctor-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: var(--bg-light);
+        }
+
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .pricing-content {
+            display: none;
+        }
+
+        .pricing-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-header .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pricing-header .price span {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
+        .pricing-body {
+            padding: 2rem;
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--bg-light);
+        }
+
+        .pricing-feature:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-feature i {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .pricing-feature span {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+
+        .pricing-note {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--radius);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        /* Map Section */
+        .map-section {
+            background: var(--bg-cream);
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: stretch;
+        }
+
+        .map-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .map-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--radius);
+            transition: all 0.3s;
+        }
+
+        .info-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow);
+        }
+
+        .info-item i {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 0.2rem;
+            width: 24px;
+        }
+
+        .info-item div h4 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+            color: var(--text-dark);
+        }
+
+        .info-item div p, .info-item div a {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-item div a:hover {
+            color: var(--primary);
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .hours-grid span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .map-frame {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 100%;
+            min-height: 450px;
+            background: white;
+        }
+
+        .map-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .review-card::before {
+            content: '\f10d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            color: var(--accent-light);
+            opacity: 0.5;
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .review-meta h4 {
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .review-meta .stars {
+            color: #ffc107;
+            font-size: 0.85rem;
+        }
+
+        .review-card p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .review-tag {
+            display: inline-block;
+            background: var(--bg-light);
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        /* Booking */
+        .booking {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 50%;
+        }
+
+        .booking h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .booking p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .booking-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .booking .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .booking .btn-primary:hover {
+            background: var(--bg-light);
+        }
+
+        .booking .btn-outline {
+            border-color: white;
+            color: white;
+        }
+
+        .booking .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-text {
+            color: white;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            animation: modalSlide 0.3s;
+        }
+
+        @keyframes modalSlide {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .modal h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--bg-light);
+            border-radius: var(--radius);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .map-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <div>
+                    <div class="logo-text">Viola</div>
+                    <div class="logo-sub">Aesthetics & Dental</div>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-cta" onclick="openModal()">Book Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>4.9 Rating (29 Reviews)</span>
+                </div>
+                <h1>Premium Dental & <span>Aesthetic</span> Care</h1>
+                <p>Experience world-class dental and aesthetic treatments at Viola Clinics. Our team of expert doctors including Dr. Omar, Dr. Logine, and Dr. Yomna are dedicated to your smile and beauty.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" onclick="openModal()">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Appointment
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-arrow-down"></i>
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-main"></div>
+                <div class="floating-card floating-card-1">
+                    <i class="fas fa-user-md"></i>
+                    <div>
+                        <h4>Expert Doctors</h4>
+                        <p>Specialized Team</p>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Open Today</h4>
+                        <p>2:30 PM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>4.9</h3>
+                <p>Google Rating</p>
+            </div>
+            <div class="stat-item">
+                <h3>29+</h3>
+                <p>Happy Reviews</p>
+            </div>
+            <div class="stat-item">
+                <h3>3</h3>
+                <p>Expert Doctors</p>
+            </div>
+            <div class="stat-item">
+                <h3>7+</h3>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Our Services</span>
+                <h2>Comprehensive Care Under One Roof</h2>
+                <p>From advanced dental procedures to cutting-edge aesthetic treatments, we offer everything you need for a beautiful, healthy smile and radiant skin.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Complete dental care including cleanings, fillings, root canals, and extractions using the latest technology for painless treatments.</p>
+                    <span class="service-tag">From 600 EGP</span>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Veneers, teeth whitening, smile makeovers, and Hollywood smile designs to give you the perfect confident smile.</p>
+                    <span class="service-tag">Custom Packages</span>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laser-pointer"></i>
+                    </div>
+                    <h3>Laser Hair Removal</h3>
+                    <p>State-of-the-art laser technology for permanent hair reduction. Safe, effective, and suitable for all skin types.</p>
+                    <span class="service-tag">Packages Available</span>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Skin Aesthetics</h3>
+                    <p>Facials, chemical peels, anti-aging treatments, and skin rejuvenation procedures for glowing, youthful skin.</p>
+                    <span class="service-tag">Consultation Free</span>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Injectables</h3>
+                    <p>Botox, fillers, and mesotherapy performed by certified specialists for natural-looking, beautiful results.</p>
+                    <span class="service-tag">By Unit</span>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle, child-friendly dental care in a comfortable environment to ensure your little ones love their dental visits.</p>
+                    <span class="service-tag">Child Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Our Team</span>
+                <h2>Meet Our Expert Doctors</h2>
+                <p>Highly qualified professionals dedicated to providing personalized care with the latest medical advancements.</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card fade-in">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                        <div class="doctor-rating">
+                            <i class="fas fa-star"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Omar</h3>
+                        <span class="specialty">Dental Specialist</span>
+                        <p>Years of experience in comprehensive dental care. Known for gentle approach and precise treatments. Specializes in cosmetic and restorative dentistry.</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-card fade-in">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                        <div class="doctor-rating">
+                            <i class="fas fa-star"></i> 5.0
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Logine</h3>
+                        <span class="specialty">Laser & Aesthetics Expert</span>
+                        <p>Highly recommended for Laser Hair Treatment. Not just a doctor, but a good friend to her patients. Certified in advanced laser technologies and skin aesthetics.</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-card fade-in">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                        <div class="doctor-rating">
+                            <i class="fas fa-star"></i> 5.0
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Yomna</h3>
+                        <span class="specialty">Consultant Dermatologist</span>
+                        <p>Takes time to listen to concerns and explains treatment options in detail. Helps patients make the best decisions for their individual needs with personalized care plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Transparent Pricing</span>
+                <h2>Treatment Packages & Prices</h2>
+                <p>Competitive pricing with flexible payment plans. Quality care that fits your budget.</p>
+            </div>
+            
+            <div class="pricing-tabs fade-in">
+                <button class="tab-btn active" onclick="switchTab('dental')">Dental Care</button>
+                <button class="tab-btn" onclick="switchTab('laser')">Laser & Aesthetics</button>
+                <button class="tab-btn" onclick="switchTab('skin')">Skin Treatments</button>
+            </div>
+            
+            <div id="dental" class="pricing-content active">
+                <div class="pricing-grid">
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>General Checkup</h3>
+                            <div class="price">600 <span>EGP</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Comprehensive oral examination</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Professional teeth cleaning</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>X-ray if needed</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Treatment plan consultation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Teeth Whitening</h3>
+                            <div class="price">2,500 <span>EGP</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Professional bleaching session</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Up to 8 shades whiter</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Take-home maintenance kit</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Follow-up appointment</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Hollywood Smile</h3>
+                            <div class="price">Custom <span>Quote</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full smile design analysis</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Porcelain veneers (per tooth)</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Digital preview before procedure</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>5-year warranty included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="laser" class="pricing-content">
+                <div class="pricing-grid">
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Upper Lip</h3>
+                            <div class="price">800 <span>EGP/session</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>5-10 min session</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>6-8 sessions recommended</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Package: 4,000 EGP (6 sessions)</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>FDA-approved laser technology</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Full Face</h3>
+                            <div class="price">1,500 <span>EGP/session</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Complete facial coverage</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Includes cheeks & chin</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Package: 7,500 EGP (6 sessions)</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Suitable for all skin types</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Full Body Package</h3>
+                            <div class="price">12,000 <span>EGP</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>8 comprehensive sessions</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>All body areas included</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Save up to 30%</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free consultation & follow-up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="skin" class="pricing-content">
+                <div class="pricing-grid">
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Deep Cleansing Facial</h3>
+                            <div class="price">900 <span>EGP</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Steam & extraction</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom mask treatment</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Moisturizing therapy</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>60-minute session</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Chemical Peel</h3>
+                            <div class="price">1,200 <span>EGP</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Skin type assessment</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Professional-grade peel</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Post-treatment care kit</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Package of 3: 3,000 EGP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Mesotherapy</h3>
+                            <div class="price">1,800 <span>EGP/session</span></div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Vitamin & mineral infusion</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Skin rejuvenation</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Anti-aging benefits</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Package of 4: 6,000 EGP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note fade-in">
+                <i class="fas fa-info-circle" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                <strong>Flexible Payment Plans Available:</strong> We offer installment options and package discounts. Contact us for a personalized quote based on your specific needs. All prices are subject to consultation confirmation.
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Map -->
+    <section id="location" class="map-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Find Us</span>
+                <h2>Visit Our Clinic</h2>
+                <p>Conveniently located in 7Days Mall, New Cairo. Easy access with ample parking.</p>
+            </div>
+            
+            <div class="map-container fade-in">
+                <div class="map-info">
+                    <h3>Viola Aesthetics & Dental Clinics</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>7Days Mall, 2nd Floor<br>Dr. Ahmed Akasha St., First Settlement<br>New Cairo, Cairo Governorate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+201115299925">011 1529 9925</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <div class="hours-grid">
+                                <span>Saturday - Thursday</span>
+                                <span>2:30 PM - 10:00 PM</span>
+                                <span>Friday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-location-arrow"></i>
+                        <div>
+                            <h4>Plus Code</h4>
+                            <p>2FW8+3W New Cairo 1</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=Viola+Aesthetics+Dental+Clinics+New+Cairo" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-directions"></i>
+                        Get Directions
+                    </a>
+                </div>
+                
+                <div class="map-frame">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d31.4394!3d30.0123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzQ0LjMiTiAzMcKwMjYnMjEuOCJF!5e0!3m2!1sen!2seg!4v1234567890"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Testimonials</span>
+                <h2>What Our Patients Say</h2>
+                <p>Real reviews from real patients who trust Viola Clinics for their dental and aesthetic needs.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar">MS</div>
+                        <div class="review-meta">
+                            <h4>Marwan S. El Awamry</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Dr Logine is a very good doctor for Lazer Hair Treatment and highly recommended. She is not just a doctor, she is also a good friend! 5 stars"</p>
+                    <span class="review-tag">Laser Treatment</span>
+                </div>
+                
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar">MZ</div>
+                        <div class="review-meta">
+                            <h4>Mohamed Zahran</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Dr. Yomna took the time to listen to my concerns and answer all of my questions in a clear and concise manner. She also explained the treatment options in detail and helped me to make the best decision."</p>
+                    <span class="review-tag">Skin Consultation</span>
+                </div>
+                
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-avatar">AA</div>
+                        <div class="review-meta">
+                            <h4>Adam A. Elsayigh</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I went to Dr. Omar at Viola Clinic for many years. The team provides exceptional dental care with modern equipment and a comfortable environment. Highly professional service."</p>
+                    <span class="review-tag">Dental Care</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section id="contact" class="booking">
+        <div class="container">
+            <h2>Ready to Transform Your Smile?</h2>
+            <p>Book your consultation today and take the first step towards a healthier, more beautiful you. Our team is ready to welcome you.</p>
+            <div class="booking-buttons">
+                <a href="tel:+201115299925" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <button class="btn btn-outline" onclick="openModal()">
+                    <i class="fas fa-calendar-alt"></i>
+                    Book Online
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text" style="font-size: 1.8rem;">Viola</span>
+                    <p>Premium aesthetics and dental care in the heart of New Cairo. Committed to excellence, patient comfort, and beautiful results.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">General Dentistry</a></li>
+                        <li><a href="#">Laser Hair Removal</a></li>
+                        <li><a href="#">Skin Aesthetics</a></li>
+                        <li><a href="#">Cosmetic Procedures</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+201115299925">011 1529 9925</a></li>
+                        <li><a href="#">7Days Mall, 2nd Floor</a></li>
+                        <li><a href="#">New Cairo, Egypt</a></li>
+                        <li><a href="#">info@violaclinics.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> 2024 Viola Aesthetics & Dental Clinics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Appointment</h3>
+            <form onsubmit="handleBooking(event)">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="01XX XXX XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>Select Service</label>
+                    <select required>
+                        <option value="">Choose a service...</option>
+                        <option value="dental">General Dentistry</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="laser">Laser Hair Removal</option>
+                        <option value="skin">Skin Treatment</option>
+                        <option value="consultation">Free Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Notes (Optional)</label>
+                    <textarea placeholder="Any specific concerns or requests..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-calendar-check"></i>
+                    Confirm Booking
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Tab switching
+        function switchTab(tabName) {
+            // Update buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update content
+            document.querySelectorAll('.pricing-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('bookingModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('bookingModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('bookingModal')) {
+                closeModal();
+            }
+        });
+
+        // Handle booking
+        function handleBooking(e) {
+            e.preventDefault();
+            alert('Thank you! Your appointment request has been received. We will contact you shortly to confirm.');
+            closeModal();
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.background = 'white';
+            navLinks.style.padding = '1rem 2rem';
+            navLinks.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+        }
+    </script>
+</body>
+</html>
+         <script src="js.js"></script>
+</body>
+</html>
